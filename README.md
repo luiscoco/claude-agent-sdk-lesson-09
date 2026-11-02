@@ -4,6 +4,37 @@ A runnable companion to **Claude Agent SDK TypeScript 0.3.310**, Lesson 9: **API
 
 Inventory an older TypeScript example, distinguish historical guidance from alpha APIs, build a staged migration checklist, and verify modern task tools and permission behavior. The app includes practice reports, actual SDK runs, opt-in prewarming, selected settings diagnostics, student exercises and a quiz.
 
+![Refreshed course interface with larger text](docs/visual-refresh-desktop.png)
+
+## Visual style and reading controls
+
+The interface follows the course reference apps: pale blue backgrounds, navy text, orange heading accents, blue controls, rounded panels, and the course astronaut mascot. The screenshot above shows the refreshed design. Additional screenshots of recorded live runs preserve the appearance at the time that evidence was captured.
+
+| Reading element            | Default presentation                                             |
+| -------------------------- | ---------------------------------------------------------------- |
+| Body text                  | **21 px**, with comfortable line spacing                         |
+| Labels and supporting text | Approximately **18–20 px** or larger                             |
+| Code                       | Approximately **20 px**, wrapping within its panel               |
+| Larger setting             | **24 px** base text, with scalable labels, controls and headings |
+
+Use **Text size → Larger** in the page header when you need bigger text. Choose **Comfortable** to return to the default size. The choice is saved in this application's browser storage and remains after a reload; it makes no API request. Browser zoom is also available.
+
+On phones and narrower windows, navigation and work areas stack so controls and text remain usable. You can open **Lesson focus & author** where that panel is available. Lesson activities, practice/live distinctions, permissions and server-side key handling continue to work as described below.
+
+The shared presentation files are `src/client/course-theme.css` (palette and layout), `src/client/course-theme.ts` (reading preference and course presentation), and `public/course-astronaut.png` (reference mascot). See [visual style details](docs/visual-style.md) for the reference sources and a full-size screenshot.
+
+### Update an existing checkout
+
+Pull the latest changes and restart the local app:
+
+```sh
+git pull --ff-only
+npm ci
+npm run dev
+```
+
+Refresh the browser tab to load the updated interface. The lesson-specific local URL and first-run instructions are listed below.
+
 ## Start here
 
 Requires Node.js **22.14+** or **24**, npm and a modern browser.
@@ -16,8 +47,6 @@ npm run dev
 ```
 
 Open **http://127.0.0.1:4391**. Inventory and practice work without an API key. Begin with **Historical session + package**, click **Analyze API inventory**, then compare **Conceptual slide syntax** and **Modern query baseline**.
-
-![Refreshed course interface with larger text](docs/visual-refresh-desktop.png)
 
 ## What students will learn
 
@@ -157,5 +186,3 @@ See [real verification evidence](docs/live-verification.md) for actual observed 
 - Installed 0.3.310 `sdk.d.ts` and `sdk-tools.d.ts` for exact query, task, alpha helper, claim and settings contracts. These determine the executable code here.
 
 MIT license. Public student repository; instructor credentials are not included.
-
-See [visual style and reading controls](docs/visual-style.md) for the refreshed reference palette, larger typography, and persistent text-size setting.
