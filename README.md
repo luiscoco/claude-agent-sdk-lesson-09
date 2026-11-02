@@ -17,7 +17,7 @@ npm run dev
 
 Open **http://127.0.0.1:4391**. Inventory and practice work without an API key. Begin with **Historical session + package**, click **Analyze API inventory**, then compare **Conceptual slide syntax** and **Modern query baseline**.
 
-![Migration Workbench](docs/migration-workbench.png)
+![Refreshed course interface with larger text](docs/visual-refresh-desktop.png)
 
 ## What students will learn
 
@@ -157,3 +157,5 @@ See [real verification evidence](docs/live-verification.md) for actual observed 
 - Installed 0.3.310 `sdk.d.ts` and `sdk-tools.d.ts` for exact query, task, alpha helper, claim and settings contracts. These determine the executable code here.
 
 MIT license. Public student repository; instructor credentials are not included.
+
+See [visual style and reading controls](docs/visual-style.md) for the refreshed reference palette, larger typography, and persistent text-size setting.
