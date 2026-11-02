@@ -1,4 +1,4 @@
-# Lesson 9 — Migration Workbench
+# Lesson 9 Migration Workbench
 
 A runnable companion to **Claude Agent SDK TypeScript 0.3.310**, Lesson 9: **API Status and Migration**.
 
